@@ -1,6 +1,17 @@
 import UIKit
 
 public struct HueColor {
+    public struct XY: Equatable, Hashable {
+        public let x: Double
+        public let y: Double
+
+        public init(x: Double, y: Double) {
+            self.x = x
+            self.y = y
+        }
+    }
+    
+    
     public let name: String
     public let uiColor: UIColor
     public let xy: (x: Double, y: Double)
